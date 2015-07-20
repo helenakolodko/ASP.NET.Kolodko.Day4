@@ -8,11 +8,11 @@ namespace Task1.Library
 {
     public class sortBySumDescendingHelper: IArrayComparer 
     {
-        public int Compare(int[] a, int[] b)
+        public bool Compare(int[] a, int[] b)
         {
             int firstSum = GetSumOfElements(a);
             int secondSum = GetSumOfElements(b);
-            return secondSum.CompareTo(secondSum);
+            return firstMax < secondMax;
         }
 
         private int GetSumOfElements(int[] array)
