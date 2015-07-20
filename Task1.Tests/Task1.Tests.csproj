@@ -53,6 +53,12 @@
     <Compile Include="IntMatrixSorterTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Task1.Library\Task1.Library.csproj">
+      <Project>{87e0a7c8-c563-445e-9760-0ec9fa3ee1dc}</Project>
+      <Name>Task1.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

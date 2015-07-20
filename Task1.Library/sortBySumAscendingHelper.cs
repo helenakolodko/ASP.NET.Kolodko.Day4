@@ -12,7 +12,7 @@ namespace Task1.Library
         {
             int firstSum = GetSumOfElements(a);
             int secondSum = GetSumOfElements(b);
-            return firstMax > secondMax;
+            return firstSum > secondSum;
         }
 
         private int GetSumOfElements(int[] array)
