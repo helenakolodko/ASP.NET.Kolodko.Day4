@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Task1.Library
 {
-    public class sortBySumAscendingHelper : IArrayComparer
+    public class SortBySumAscendingHelper : IArrayComparer
     {
-        public bool Compare(int[] a, int[] b)
+        public int Compare(int[] a, int[] b)
         {
             int firstSum = GetSumOfElements(a);
             int secondSum = GetSumOfElements(b);
-            return firstSum > secondSum;
+            return firstSum.CompareTo(secondSum);
         }
 
         private int GetSumOfElements(int[] array)

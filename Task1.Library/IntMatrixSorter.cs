@@ -6,26 +6,6 @@ namespace Task1.Library
     public static class IntMatrixSorter 
     {
         /// <summary>
-        /// Sort matrix by elements sum of matrix's rows.
-        /// </summary>
-        /// <param name="array">Matrix to be sorted.</param>
-        /// <param name="increasing">Specifies the order of sorting.</param>
-        public static void SortBySumOfRowElementsAscending(int[][] array, bool increasing = true)
-        {
-            SortRows(array, new sortBySumAscendingHelper());
-        }
-
-        /// <summary>
-        /// Sort matrix by elements sum of matrix's rows.
-        /// </summary>
-        /// <param name="array">Matrix to be sorted.</param>
-        /// <param name="increasing">Specifies the order of sorting.</param>
-        public static void SortByMaxMagnitudeElementAscending(int[][] array, bool increasing = true)
-        {
-            SortRows(array, new sortByMaxMagnitudeAscendingHelper());
-        }
-
-        /// <summary>
         /// Sort matrix rows using specified compare method.
         /// </summary>
         /// <param name="array">Matrix to be sorted.</param>
@@ -41,7 +21,7 @@ namespace Task1.Library
                 found = false;
                 for (int j = array.Length - 1; j >= i; j--)
                 {
-                    if (comparer.Compare(array[j - 1], array[j]))
+                    if (comparer.Compare(array[j - 1], array[j]) > 0)
                     {
                         SwapElements(array, j, j - 1);
                     }

@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Task1.Library
 {
-    public class sortByMaxMagnitudeDescendingHelper : IArrayComparer
+    public class SortByMaxMagnitudeAscendingHelper : IArrayComparer
     {
-        public bool Compare(int[] a, int[] b)
+        public int Compare(int[] a, int[] b)
         {
             int firstMax = GetMaxMagnitude(a);
             int secondMax = GetMaxMagnitude(b);
-            return firstMax < secondMax;
+            return firstMax.CompareTo(secondMax);
         }
 
         private int GetMaxMagnitude(int[] array)

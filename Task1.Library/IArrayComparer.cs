@@ -4,6 +4,6 @@ namespace Task1.Library
 {
     public interface IArrayComparer
     {
-        bool Compare(int[] a, int[] b);
+        int Compare(int[] a, int[] b);
     }
 }

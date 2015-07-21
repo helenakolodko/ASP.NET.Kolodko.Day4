@@ -42,10 +42,6 @@
     <Compile Include="IArrayComparer.cs" />
     <Compile Include="IntMatrixSorter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="sortByMaxMagnitudeDescendingHelper.cs" />
-    <Compile Include="sortByMaxMagnitudeAscendingHelper.cs" />
-    <Compile Include="sortBySumAscendingHelper.cs" />
-    <Compile Include="sortBySumDescendingHelper.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
